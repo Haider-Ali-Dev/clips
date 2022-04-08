@@ -8,13 +8,15 @@ import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule } from 'ngx-mask';
 import { AlertComponent } from './alert/alert.component';
+import { EventBlockerDirective } from './directives/event-blocker.directive';
 @NgModule({
   declarations: [
     ModalComponent,
     TabsContainerComponent,
     TabComponent,
     InputComponent,
-    AlertComponent
+    AlertComponent,
+    EventBlockerDirective
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { AlertComponent } from './alert/alert.component';
     TabComponent,
     TabsContainerComponent,
     InputComponent,
-    AlertComponent
+    AlertComponent,
+    EventBlockerDirective
   ],
   // providers: [
   //   ModalService
